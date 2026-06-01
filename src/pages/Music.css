@@ -1,0 +1,38 @@
+.language-selector-page {
+  min-height: 60vh;
+  display: flex;
+  padding: 24px;
+}
+
+.lang-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.lang-bubble {
+  background: var(--bg-glass);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-glass);
+  color: var(--text-primary);
+  font-size: 18px;
+  padding: 20px 40px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lang-bubble:hover {
+  background: linear-gradient(45deg, var(--accent-purple), var(--accent-cyan));
+  transform: translateY(-5px) scale(1.05);
+  border-color: transparent;
+  box-shadow: 0 10px 20px rgba(0, 240, 255, 0.3);
+}
+
+.neon-text {
+  background: linear-gradient(45deg, var(--accent-purple), var(--accent-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
